@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-                  onSubmitted: (value) => determinarFaseDaVida,
+                  onSubmitted: (value) => determinarFaseDaVida(),
                 ),
                 const SizedBox(height: 32),
                 ElevatedButton(
