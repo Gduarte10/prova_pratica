@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 void main() {
@@ -55,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     setState(() {
       resultvida;
+      idadeController.clear();
     });
   }
 
@@ -82,6 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 TextField(
                   controller: idadeController,
                   decoration: InputDecoration(
+                    prefixIcon: const Icon(Icons.person),
                     labelText: 'Digite sua idade',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
